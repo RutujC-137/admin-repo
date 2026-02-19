@@ -6,4 +6,4 @@ cd /var/www/admin
 # Remove the old build folder (adjust 'build' to 'dist' if needed)
 rm -rf build
 npm -f install
-npm run buildDev
+npm run build:dev

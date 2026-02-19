@@ -2,5 +2,5 @@
 
 echo "Stopping application"
 
-pm2 stop frontend || true
-pm2 delete frontend || true
+pm2 stop admin || true
+pm2 delete admin || true
