@@ -1,6 +1,7 @@
 {
   "name": "admin",
   "version": "1.0.0",
+  "homepage": "/admin",
   "private": true,
   "dependencies": {
     "react": "^18.2.0",
@@ -10,13 +11,18 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build:dev":     "env-cmd -f .env.dev     react-scripts build",
-    "build:qa":      "env-cmd -f .env.qa      react-scripts build",
+    "build:dev": "env-cmd -f .env.dev     react-scripts build",
+    "build:qa": "env-cmd -f .env.qa      react-scripts build",
     "build:preprod": "env-cmd -f .env.preprod react-scripts build",
-    "build:prod":    "env-cmd -f .env.prod    react-scripts build"
+    "build:prod": "env-cmd -f .env.prod    react-scripts build"
   },
   "browserslist": {
-    "production": [">0.2%", "not dead"],
-    "development": ["last 1 chrome version"]
+    "production": [
+      ">0.2%",
+      "not dead"
+    ],
+    "development": [
+      "last 1 chrome version"
+    ]
   }
 }
