@@ -3,7 +3,11 @@ echo "Installing dependencies"
 
 cd /var/www/admin
 
-# Remove the old build folder (adjust 'build' to 'dist' if needed)
-rm -rf build
-npm -f install
+# Remove old modules and build to ensure a clean slate
+rm -rf node_modules build
+
+echo "Installing dependencies"
+npm install
+
+echo "Building application"
 npm run build:dev
