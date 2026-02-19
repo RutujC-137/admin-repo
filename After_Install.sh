@@ -1,13 +1,9 @@
 #!/bin/bash
-echo "Installing dependencies"
+echo "Preparing admin deployment"
 
 cd /var/www/admin
 
-# Remove old modules and build to ensure a clean slate
-rm -rf node_modules build
-
-echo "Installing dependencies"
-npm install
-
-echo "Building application"
-npm run build:dev
+# We DO NOT run npm install or npm build here. 
+# It causes ScriptTimedOut (5 mins limit).
+# Static files should be in /var/www/admin/build from CodeBuild.
+echo "Deployment preparation complete."
