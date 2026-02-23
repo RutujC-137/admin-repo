@@ -4,6 +4,7 @@ os: linux
 files:
   - source: /
     destination: /var/www/admin
+    file_exists_behavior: OVERWRITE
 
 hooks:
   ApplicationStop:
@@ -13,7 +14,7 @@ hooks:
 
   AfterInstall:
     - location: After_Install.sh
-      timeout: 600
+      timeout: 900
       runas: root
 
   ApplicationStart:
